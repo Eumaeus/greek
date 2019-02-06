@@ -266,7 +266,7 @@ object LiteraryGreekString  extends MidOrthography {
   /** Alphabetically ordered Vector of vowel characters in `ascii` view.*/
   val vowels = Vector('a','e','h','i','o','u','w')
   /** Alphabetically ordered Vector of consonant characters in `ascii` view.*/
-  val consonants = Vector('b','g','d','z','q','k','l','m','n','c','p',
+  val consonants = Vector('b','g','d', 'v', 'z','q','k','l','m','n','c','p',
     'r','s','t','f','x','y','Σ')
   /** Breathing characters. */
   val breathings = Vector(')', '(')

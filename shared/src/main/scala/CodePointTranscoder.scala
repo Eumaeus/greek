@@ -161,6 +161,7 @@ import scala.scalajs.js.annotation._
       CodePointPair("*g","Γ"), //915
       CodePointPair("*d","Δ"), //916
       CodePointPair("*e","Ε"), //917
+      CodePointPair("*v","Ϝ"), //917
       CodePointPair("*z","Ζ"), //918
       CodePointPair("*h","Η"), //919
       CodePointPair("*q","Θ"), //920
@@ -195,6 +196,7 @@ import scala.scalajs.js.annotation._
       CodePointPair("g","γ"), //947
       CodePointPair("d","δ"), //948
       CodePointPair("e","ε"), //949
+      CodePointPair("v","ϝ"), //949
       CodePointPair("z","ζ"), //950
       CodePointPair("h","η"), //951
       CodePointPair("q","θ"), //952
@@ -233,8 +235,6 @@ import scala.scalajs.js.annotation._
       CodePointPair("","ϙ"), //985
       CodePointPair("","Ϛ"), //986
       CodePointPair("","ϛ"), //987
-      CodePointPair("","Ϝ"), //988
-      CodePointPair("","ϝ"), //989
       CodePointPair("","Ϟ"), //990
       CodePointPair("","ϟ"), //991
       CodePointPair("","Ϡ"), //992

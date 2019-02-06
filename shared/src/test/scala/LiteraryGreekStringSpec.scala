@@ -3,7 +3,7 @@ import org.scalatest.FlatSpec
 
 
 
-
+ 
 class LiteraryGreekStringSpec extends FlatSpec {
 
 
@@ -39,5 +39,16 @@ class LiteraryGreekStringSpec extends FlatSpec {
     assert(s1.ucode == expected)
   }
 
+  it should "accept a digamma in ascii and render it in unicode" in {
+    val s1 = LiteraryGreekString("""va/nac""")
+    val expected = """ϝάναξ"""
+    assert(s1.ucode == expected)
+  }
+
+   it should "accept a digamma in unicode and render it in ascii" in {
+    val s1 = LiteraryGreekString("""ϝάναξ""")
+    val expected = """va/nac"""
+    assert(s1.ascii == expected)
+  }
 
 }
