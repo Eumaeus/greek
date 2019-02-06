@@ -31,9 +31,17 @@ import scala.scalajs.js.annotation._
 
 @JSExportAll object HexameterParser {
 
-  def munge(lgs:LiteraryGreekString):String = {
+  def munge(lgs:LiteraryGreekString, correption:Boolean = false):String = {
     val s:String = lgs.toLower.stripAccent.ascii
-    s.replaceAll("""[ ,;:".']""","").replaceAll("c","ks").replaceAll("y","ps")
+    correption match {
+      case false => {
+        s.replaceAll("""[ ,;:".']""","").replaceAll("c","ks").replaceAll("y","ps")
+      }
+      case true => {
+        val firstString:String = s.replaceAll("""[,;:".']""","").replaceAll("c","ks").replaceAll("y","ps")
+        firstString
+      }
+    }
   }
 
 
